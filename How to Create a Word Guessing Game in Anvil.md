@@ -22,12 +22,14 @@ We're going to recreate the popular game **Wordle** in Anvil. Don't worry if you
 - Drag and drop a Label, set the text as "Correct Letter but Incorrect Position", and give it an orange background.
 - Add another Label with the text "Correct Letter and Correct Position" and a green background.
 - At this point, your UI should look something like this:
+  
 ![image ws_1](assets/ws_1.png)
 
 - Now, let's add an outlined card. This will serve as a container.
 - Inside the outlined card, add 6 flow panels (one for each attempt).
 - Center align the flow panels for a consistent look.
 - Your UI should now resemble this:
+  
 ![image ws_2](assets/ws_2.png)
 - That's it for the UI, and it's hardly 5 minutes. Let's move on to the code!
 
