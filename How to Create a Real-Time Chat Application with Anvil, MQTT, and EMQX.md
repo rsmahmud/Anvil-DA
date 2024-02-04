@@ -5,7 +5,7 @@
 - Explanation of the technologies involved: Anvil for the front end, Paho MQTT JavaScript client library for MQTT communication, and EMQX MQTT broker for message exchange.
 
 ## Setting Up Anvil Environment
-- Create a new Anvil app (I'm using Rally Theme)
+- Create a new Anvil app
 - Design the chat interface using Anvil's visual editor.
 - Add components such as text boxes, labels, and buttons for user interaction.
 
@@ -36,7 +36,7 @@
 
 ### Step-by-Step Guide
 
-1. Start by creating a new Anvil app and designing the chat interface using Anvil's visual editor. Add text boxes for entering messages, container and labels for displaying chat history, and a button for sending messages.
+1. Start by creating a new Anvil app and designing the chat interface using Anvil's visual editor.  (I'm using Rally Theme). Add text boxes for entering messages, container and labels for displaying chat history, and a button for sending messages.
 
 ![](assets/mqtt_chat_ui.png)
 
