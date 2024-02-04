@@ -3,7 +3,7 @@
 ## Introduction
 Hey there, Anvil enthusiasts! I'm Hasan Rasel. Today I bring to you a fun little exercise.
 Whether you're just starting with Anvil or already got your hands dirty, the adrenaline is promised.
-We're going to build a version of the popular game **Wordle** in Anvil. Don't worry if you're not familiar with it; it's super simple:
+We're going to recreate the popular game **Wordle** in Anvil. Don't worry if you're not familiar with it; it's super simple:
 - The app picks a random 5-letter word.
 - You get 6 tries to guess it.
 - After each guess, you'll get hints about how close you were to the secret word. We'll dive into that shortly.
