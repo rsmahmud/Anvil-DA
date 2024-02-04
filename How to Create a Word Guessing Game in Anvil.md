@@ -97,11 +97,11 @@ def text_box_word_pressed_enter(self, **event_args):
         sleep(5)
         self.reset_game()
 ```
-When you run the app, it should look similar to this:
+**When you run the app, it should look similar to this:**
 ![done view](assets/ws_3.png)
 
 ## Resetting the Game
-- After win or loss, call `reset_game()`, which selects a new random word and clears the previous guesses and feedback.
+- After win or loss, call `reset_game()`, which essentially picks a new random word and clears the previous guesses and feedback.
 - Maybe add a 5-second pause before resetting?
 
 By following these steps, you can create a word-guessing game in Anvil where players can test their word-guessing skills and have fun trying to guess the secret word.
@@ -109,7 +109,15 @@ By following these steps, you can create a word-guessing game in Anvil where pla
 **With just a little tinkering, you could make it look like this:**
 ![done view](assets/wordle.png)
 
+|||
+|---|---|
+| Live Example | [wordle.anvil.app](https://wordle.anvil.app/) |
+| Clone Link | [<img src="https://anvil.works/img/forum/copy-app.png" height='40px'>](https://anvil.works/build#clone:RDCUJG3LIBL76SY5=BTSV66HN3OQFKJ32QHJLDUZN)|
+---
+
+
 ## What's Next
 If you're a beginner in Anvil and trying to master the magic, you can do so while having fun!
 - Keep track of win/loss scores and save them to a database.
+- You could add some animations from anvil-extras
 - Add functionalities to make it multiplayer; instead of picking a random word, accept a challenge from another user.
