@@ -1,32 +1,32 @@
 # How to Create a Word Guessing Game in Anvil with Nothing but Python under 30 lines.
 
 ### Introduction
-Hello Anvil enthusiasts, I'm Hasan Rasel. Today I bring to you a fun little excercise. Whether you are just getting started with anvil or already got your hands dirty, the adrenaline is promised. We are going to recreate the famous **Wordle** game in Anvil. If you don't already know what that is, don't worry, it's quite simple! 
+Hello Anvil enthusiasts, I'm Hasan Rasel. Today I bring to you a fun little exercise. Whether you are just getting started with anvil or already got your hands dirty, the adrenaline is promised. We are going to recreate the famous **Wordle** game in Anvil. If you don't already know what that is, don't worry, it's quite simple! 
   - App picks a random 5-letter word
   - You get 6 attempts to guess it.
   - For each 5-letter word you enter, It will give hint's about how close you were to guessing the secret word by coloring up the letters in a certain way. We'll get into that soon.
 
 ### Steps
 
-- [Buid The UI](#lets-start-by-laying-out-the-ui)
+- [Build The UI](#lets-start-by-laying-out-the-ui)
 - [Picking a Secret Word](#picking-a-secret-word)
 - [Display Placeholders for each letter of the word](#display-placeholders-for-each-letter-of-the-word)
 - [Game Logic](#game-logic)
 - [Resetting the Game](#resetting-the-game)
 - 
-### Let's start by laying out the UI
+### Let's Build the UI
 - Start by creating a new anvil app
 - Drag and drop a TextBox, name it ``self.text_box_word`` and make it center aligned
 - Drag and drop a Label and set the text as ``Correct Letter but Incorrect Position`` with `orange` ![#ffa500](https://via.placeholder.com/15/ffa500/000000.png?text=+) as background color.
 - Add another Label with text as ``Correct Letter and Correct Position`` with `green` ![#008000](https://via.placeholder.com/15/008000/ffffff.png?text=+) as background color.
 - At this point you should have something like this 
-![image cvcegh](ws_1.png)
+![image ws_1](assets/ws_1.png)
 
 - Now let's add an outlined_card. This will work as a container.
 - Add 6 flow panels inside (one for each attempt)
 - Make the flow panel center aligned, just make thing look a bit nice and consistent.
 - It should look like this by now
-- ![image cvcegh](ws_2.png)
+- ![image ws_2](assets/ws_2.png)
 - That's it. We're done with UI and that's hardly 5 minutes. We'll do the rest from code!
 
 ### Picking a Secret Word
@@ -72,7 +72,7 @@ def reset_game(self):
 - If ``correct_letter_count == 5`` meaning all 5 letters are guessed correctly, show **Winning** notification.
 - If ``attempt_count >= 6`` then user has reached the limit, show **Losing** notification.
 ```python
-  def text_box_word_pressed_enter(self, **event_args):
+def text_box_word_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     word = self.text_box_word.text.strip().upper()
     if len(word) != 5:
@@ -101,7 +101,7 @@ def reset_game(self):
         self.reset_game()
 ```
 When you run the app it should look similar to this
-![done view](ws_3.png)
+![done view](assets/ws_3.png)
 
 ### Resetting the Game
 - After win or lose logic call ``reset_game()`` which essentially picks a new random word and clears the previous guesses and feedback.
@@ -112,10 +112,10 @@ By following these steps, you can create a word guessing game in Anvil where pla
 Now you tell me how many lines that was!
 
 With just a little tinkering you could make it look like this
-![done view](wordle.png)
+![done view](assets/wordle.png)
 
 
 ### What's Next
 If you're a beginner in anvil and trying to master the magic you could do so while having fun!
 - Try to keep track of win/lose scores of user and save to database
-- You could add functionalities to make it multiplayer, instead of picking the secret word at random accept it from an user as a challenge for another user
+- You could add functionalities to make it multiplayer, instead of picking the secret word at random accept it from a user as a challenge for another user
