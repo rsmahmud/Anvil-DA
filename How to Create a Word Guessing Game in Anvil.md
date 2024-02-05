@@ -55,7 +55,7 @@ def __init__(self, **properties):
 def reset_game(self):
     self.secret_word = choice(word_list).upper()
     self.attempt_count = 0
-    for fp in self.fp_list:
+    for fp in self.outlined_card_1.get_components():
         fp.clear()
         for i in range(5):
             label = Label(text=" ", align='center', width=50, background='#111', foreground='#FFF')
