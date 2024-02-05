@@ -24,7 +24,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 DEVICE_ID  = "64F76FD7"
-UPLINK_KEY = "server_4ZD3RF6VBQOYAVPITV5Q3JPI-3KOY26RMA5UHRLFA"
+UPLINK_KEY = "<UPLINK_KEY>"
 INTERVAL   = 1
 
 @anvil.server.callable(f'ping_{DEVICE_ID}')
