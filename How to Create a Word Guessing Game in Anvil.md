@@ -121,7 +121,7 @@ By following these steps, you can create a word-guessing game in Anvil where pla
 
 
 ## What's Next
-If you're a beginner in Anvil and trying to master the magic, you can do so while having fun!
+If you're a beginner in Anvil and trying to master the magic, you can do so while having fun! Try to add  the following features - 
 - Keep track of win/loss scores and save them to a database.
 - You could add some animations from anvil-extras
 - Add functionalities to make it multiplayer; instead of picking a random word, accept a challenge from another user.
