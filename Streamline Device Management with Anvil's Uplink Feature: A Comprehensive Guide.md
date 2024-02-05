@@ -60,7 +60,8 @@ class Console(ConsoleTemplate):
     def button_restart_service_click(self, file, **event_args):
         # Uplink code is configured to run as a service.
         # Execute shell command to restart the service,
-        # It should start with newly modified codes, even registering new callables
+        # It should start with newly modified codes, even registering new callable
+
 ```
 
 **Step 3: Interacting with Remote Devices**
