@@ -137,7 +137,7 @@ By following these steps, you can create a real-time chat application with Anvil
 
 
 ## What's Next
-If you're a beginner in Anvil and trying to master the magic, you can do so while having fun!
+If you're a beginner in Anvil and trying to master the magic, you can do so in a fun way!  Try to add  the following features - 
 - save the messages to a database.
 - instead of just one global chat, build one-to-one chat for users 
 
