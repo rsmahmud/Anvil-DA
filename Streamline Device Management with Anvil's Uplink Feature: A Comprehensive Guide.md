@@ -58,7 +58,7 @@ class Console(ConsoleTemplate):
         # Upload file to remote device and handle response
 
     def button_restart_service_click(self, file, **event_args):
-        # Uplink code is configured to run as a service.
+        # Uplink code is configured to run as a service that restarts itself if terminated.
         # Execute shell command to restart the service,
         # It should start with newly modified codes, even registering new callable
 
@@ -82,7 +82,7 @@ class Console(ConsoleTemplate):
     - Handle file uploads securely and provide feedback on the upload status.
 
 5. **Restart Service:**
-    - Configure the Uplink code to run as a service
+    - Configure the Uplink code to run as a service that restarts itself if terminated
     - Send commands to restart the service
     - It should connect back and newly modified/uploaded code will take effect
 
