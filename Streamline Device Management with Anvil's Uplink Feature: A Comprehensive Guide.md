@@ -25,12 +25,9 @@ from anvil.tables import app_tables
 
 DEVICE_ID  = "64F76FD7"
 UPLINK_KEY = "<UPLINK_KEY>"
-INTERVAL   = 1
 
 @anvil.server.callable(f'ping_{DEVICE_ID}')
 def ping():
-    global INTERVAL
-    INTERVAL += 1
     return f"Pong!"
 
 # More callable functions for executing commands, managing files, etc.
@@ -41,7 +38,6 @@ def ping():
 ```python
 # Client Side Code
 
-@routing.route('/console', url_keys=['id'], template='RouterAdmin', full_width_row=True)
 class Console(ConsoleTemplate):
     # Initialize components and set up event handlers
 
@@ -60,6 +56,11 @@ class Console(ConsoleTemplate):
 
     def file_loader_upload_change(self, file, **event_args):
         # Upload file to remote device and handle response
+
+    def button_restart_service_click(self, file, **event_args):
+        # Uplink code is configured to run as a service.
+        # Execute shell command to restart the service,
+        # It should start with newly modified codes, even registering new callables
 ```
 
 **Step 3: Interacting with Remote Devices**
@@ -78,6 +79,11 @@ class Console(ConsoleTemplate):
 4. **Upload Files:**
     - Allow users to upload files to remote devices directly from the Anvil app.
     - Handle file uploads securely and provide feedback on the upload status.
+
+5. **Restart Service:**
+    - Configure the Uplink code to run as a service
+    - Send commands to restart the service
+    - It should connect back and newly modified/uploaded code will take effect
 
 **Step 4: Enhancing Device Management**
 
