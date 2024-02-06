@@ -31,7 +31,7 @@ Open a terminal and execute the following command:
 ```
 This will create and open ``anvild.service`` file in the ``/etc/systemd/system/`` directory with the [nano](https://www.nano-editor.org/docs.php) text editor. You can use `vi` to edit the file if you prefer. 
 
-I am naming it ``anvild.service`` short for anvil daemon. Of course, you can name it anything you want.
+I am naming it ``anvild.service`` short for anvil daemon service. Of course, you can name it anything you want.
 
 
 
